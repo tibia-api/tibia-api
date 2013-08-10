@@ -1,3 +1,4 @@
+@vcr
 Feature: Worlds API
 
   I want to be able to get a list of all the worlds

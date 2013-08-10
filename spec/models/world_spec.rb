@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'models/world'
 
-describe TibiaAPI::World do
+describe TibiaAPI::World, :vcr do
   describe ".all" do
     subject(:worlds) { TibiaAPI::World.all }
 
