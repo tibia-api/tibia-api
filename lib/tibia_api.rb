@@ -1,9 +1,7 @@
-require 'json'
-require 'nokogiri'
-require 'open-uri'
-require 'sinatra'
+require 'bundler'
+Bundler.require
 
-require_relative 'app/models/world'
+require 'models/world'
 
 module TibiaAPI
   class App < Sinatra::Base

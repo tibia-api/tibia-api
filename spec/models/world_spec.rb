@@ -1,4 +1,5 @@
-require_relative '../../app/models/world'
+require 'spec_helper'
+require 'models/world'
 
 describe TibiaAPI::World do
   describe ".all" do

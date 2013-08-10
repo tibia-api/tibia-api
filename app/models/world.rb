@@ -1,5 +1,4 @@
 require 'net/http'
-require 'nokogiri'
 
 module TibiaAPI
   class World
