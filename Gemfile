@@ -5,6 +5,7 @@ gem 'nokogiri'
 gem 'sinatra'
 
 group :development, :test do
+  gem 'rake'
   gem 'awesome_print'
   gem 'pry-meta'
 end
