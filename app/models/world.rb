@@ -4,12 +4,12 @@ module TibiaAPI
   class World
     attr_reader :name, :online, :location, :type, :additional
 
-    def initialize(name: nil, online: nil, location: nil, type: nil, additional: nil)
-      @name = name
-      @online = online
-      @location = location
-      @type = type
-      @additional = additional
+    def initialize(options={})
+      @name = options[:name]
+      @online = options[:online]
+      @location = options[:location]
+      @type = options[:type]
+      @additional = options[:additional]
     end
 
     def to_json
