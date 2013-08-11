@@ -1,15 +1,14 @@
 @vcr
 Feature: Worlds API
 
-  I want to be able to get a list of all the worlds
-  So that I know which worlds exist and their information
-  such as online players, region and type
+  I want to be able to get a list of all the worlds So that I know which worlds
+  exist and their information such as online players, region and type
 
   Scenario: Tibia Site responds successfully
     Given that the Tibia website is up and responding successfully
     When I make a GET request to /api/worlds.json
     Then I should get a "worlds" list JSON like the following:
-      """
+      """json
       {
         "worlds": [
           {
