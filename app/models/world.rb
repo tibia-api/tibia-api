@@ -1,18 +1,13 @@
 require 'net/http'
+require 'active_model'
 
 module TibiaAPI
   class World
-    attr_reader :name, :online, :location, :type, :additional
+    include ActiveModel::Model
+    include ActiveModel::Serializers::JSON
+    attr_accessor :name, :online, :location, :type, :additional
 
-    def initialize(options={})
-      @name = options[:name]
-      @online = options[:online]
-      @location = options[:location]
-      @type = options[:type]
-      @additional = options[:additional]
-    end
-
-    def to_json
+    def attributes
       {
         name: name,
         online: online,
@@ -22,12 +17,19 @@ module TibiaAPI
       }
     end
 
-    def self.all
-      response = Net::HTTP.get URI('http://www.tibia.com/community/?subtopic=worlds')
-      dom = Nokogiri::HTML.parse(response)
+    class << self
+      def all
+        response = Net::HTTP.get URI('http://www.tibia.com/community/?subtopic=worlds')
+        dom = Nokogiri::HTML.parse(response)
+        dom.css('#worlds table.TableContent tr').map(&method(:parse_one)).compact
+      end
 
-      worlds = dom.css('#worlds table.TableContent tr').map do |table_row|
-        name, online, location, type, additional = table_row.css('td').map(&:text).map(&:strip)
+      private
+
+      def parse_one(world_row)
+        name, online, location, type, additional = world_row.css('td').map(&:text).map(&:strip)
+        return if name =~ /(^Overall Maximum|^World$)/
+
         World.new(
           name: name,
           online: online.to_i,
@@ -35,10 +37,6 @@ module TibiaAPI
           type: type,
           additional: additional
         )
-      end
-
-      worlds.reject do |world|
-        world.name =~ /(^Overall Maximum|^World$)/
       end
     end
   end

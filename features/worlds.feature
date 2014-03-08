@@ -32,7 +32,7 @@ Feature: Worlds API
             "online": "<number>",
             "location": "Europe",
             "type": "Hardcore PvP",
-            "additional": "free-to-move"
+            "additional": "less strict character transfer conditions"
           },
           // ...
           {

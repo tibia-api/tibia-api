@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -36,14 +36,14 @@ http_interactions:
       - Accept-Encoding
       - User-Agent
       Date:
-      - Sat, 10 Aug 2013 17:18:47 GMT
+      - Sat, 08 Mar 2014 19:11:06 GMT
       Transfer-Encoding:
       - chunked
       Connection:
       - Transfer-Encoding
       - keep-alive
       Set-Cookie:
-      - CIPSOFT=k5q1kl85u93hnpit8duau81hf4; path=/
+      - CIPSOFT=0biheic76f1kbhad04p15h4f02; path=/
     body:
       encoding: UTF-8
       string: "<html>\n<head>\n  <title>Tibia - Free Multiplayer Online Role Playing
@@ -56,20 +56,37 @@ http_interactions:
         multiplayer game, free online rpg, free mmorpg, mmorpg, mmog, online role
         playing game, online multiplayer game, internet game, online rpg, rpg\" />\n
         \ <meta name=\"google-site-verification\" content=\"DnO3wR8m-XUPrU02NoZt9x3vMB0fjpOXXJshbKucEj8\"
-        />\n\n  <link rel=\"shortcut icon\" href=\"http://static.tibia.com/images/global/general/favicon.ico\"
-        type=\"image/x-icon\">\n  <link rel=\"icon\" href=\"http://static.tibia.com/images/global/general/favicon.ico\"
-        type=\"image/x-icon\">\n\n  <link href=\"http://static.tibia.com/styles/basic_d.css?version=1756bb19f61b5d2ac270e7208881d645\"
+        />\n\n  <!--  regular browsers -->\n  <link rel=\"shortcut icon\" href=\"http://static.tibia.com/images/global/general/favicon.ico\"
+        type=\"image/x-icon\">\n  <!-- For iPad with high-resolution Retina display
+        running iOS = 7: -->\n  <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-152x152.png\">\n
+        \ <!-- For iPad with high-resolution Retina display running iOS = 6: -->\n
+        \ <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-144x144.png\">\n
+        \ <!-- For iPhone with high-resolution Retina display running iOS = 7: -->\n
+        \ <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-120x120.png\">\n
+        \ <!-- For iPhone with high-resolution Retina display running iOS = 6: -->\n
+        \ <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-114x114.png\">\n
+        \ <!-- For the iPad mini and the first- and second-generation iPad on iOS
+        = 7: -->\n  <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-76x76.png\">\n
+        \ <!-- For the iPad mini and the first- and second-generation iPad on iOS
+        = 6: -->\n  <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon-72x72.png\">\n
+        \ <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->\n
+        \ <link rel=\"apple-touch-icon\" href=\"http://static.tibia.com/images/global/general/apple-touch-icon.png\">\n
+        \ <!-- Fallback for older devices: -->\n  <link rel=\"apple-touch-icon-precomposed\"
+        href=\"http://static.tibia.com/images/global/general/apple-touch-icon-precomposed.png\">\n\n
+        \ <link href=\"http://static.tibia.com/styles/basic_d.css?version=c8e8a314c97e15cb8094e4fe51c936ae\"
         rel=\"stylesheet\" type=\"text/css\">\n  \n  <script type=\"text/javascript\"
         src=\"http://static.tibia.com/javascripts/extern/jquery.js\" ></script>\n
-        \ <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/ajax/ajaxcip.js\"
-        ></script>\n    <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/generic.js?version=48c645555c0dba301a6c6ff29fa0a1b4\"
+        \ <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/extern/jquery_ui/jquery-ui.core.js\"
+        ></script>\n  <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/extern/jquery_ui/jquery-ui.widgets.js\"
+        ></script>\n  <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/ajax/ajaxcip.js\"
+        ></script>\n    <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/generic.js?version=2e1efa84c02732e4698e7f5e76dfcd43\"
         ></script>\n    <script type='text/javascript'>  var loginStatus=0; loginStatus='false';
         \ var activeSubmenuItem='worlds';  var JS_DIR_IMAGES=0; JS_DIR_IMAGES='http://static.tibia.com/images/';
         \ var JS_DIR_ACCOUNT=0; JS_DIR_ACCOUNT='https://secure.tibia.com/account/';
         \ var g_FormName='';  var g_FormField='';  var g_Deactivated=false;var FB_TryLogin
         = 0;var FB_ForceReload = 0;</script><script type=\"text/javascript\" >\n  if(top.location
         != window.location) {\n    top.location = self.location;\n  }\n</script>\n
-        \ <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/initialize.js?version=08e2402e100719a94405e6bf19ca9679\"
+        \ <script type=\"text/javascript\" src=\"http://static.tibia.com/javascripts/initialize.js?version=b2331fedc5790d3a906c166d745fdf9e\"
         ></script>\n  \n</head>\n\n<body onBeforeUnLoad=\"SaveMenu();\" onUnload=\"SaveMenu();\"
         onLoad=\"SetFormFocus()\" >\n  <script type=\"text/javascript\" >\nvar g_FB_LoginURL
         = \"\";\n</script>\n<div id=\"fb-root\" ></div><script type=\"text/javascript\"
@@ -94,12 +111,12 @@ http_interactions:
         ref = d.getElementsByTagName('script')[0];\n    if (d.getElementById(id))
         {return;}\n    js = d.createElement('script'); js.id = id; js.async = true;\n
         \   js.src = \"//connect.facebook.net/en_US/all.js\";\n    ref.parentNode.insertBefore(js,
-        ref);\n  }(document));\n</script>\n\n  <a name=\"top\" ></a>\n\n  <div id=\"MainHelper1\"
-        >\n    <div id=\"MainHelper2\" >\n      <div id=\"ArtworkHelper1\" >\n        <div
-        id=\"ArtworkHelper2\" >\n          <div id=\"HeaderArtworkDiv\" style=\"background-image:url(http://static.tibia.com/images/global/header/background-artwork.jpg);\"
-        ></div>\n        </div>\n      </div>\n      <div id=\"DeactivationContainer\"
-        onClick=\"DisableDeactivationContainer();\" ></div>\n\n      <div id=\"Bodycontainer\"
-        >\n      <div id=\"ContentRow\">\n          <div id=\"MenuColumn\">\n            <div
+        ref);\n  }(document));\n</script>\n\n  <div id=\"DeactivationContainer\" onClick=\"DisableDeactivationContainer();\"
+        ></div>\n\n  <a name=\"top\" ></a>\n\n  <div id=\"MainHelper1\" >\n    <div
+        id=\"MainHelper2\" >\n      <div id=\"ArtworkHelper1\" >\n        <div id=\"ArtworkHelper2\"
+        >\n          <div id=\"HeaderArtworkDiv\" style=\"background-image:url(http://static.tibia.com/images/global/header/background-artwork.jpg);\"
+        ></div>\n        </div>\n      </div>\n\n      <div id=\"Bodycontainer\" >\n
+        \       <div id=\"ContentRow\">\n          <div id=\"MenuColumn\">\n            <div
         id=\"LeftArtwork\">\n              <a href=\"https://secure.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php\"
         ><img id=\"TibiaLogoArtworkTop\" src=\"http://static.tibia.com/images/global/header/tibia-logo-artwork-top.gif\"
         alt=\"logoartwork\" /></a>\n              <img id=\"LogoLink\" src=\"http://static.tibia.com/images/global/header/tibia-logo-artwork-string.gif\"
@@ -514,29 +531,10 @@ http_interactions:
         style='background-image:url(http://static.tibia.com/images/global/menu/icon-activesubmenu.gif);'></div>\n
         \   <div id='ActiveSubmenuItemLabel_legaldocuments' class='SubmenuitemLabel'>Legal
         Documents</div>\n    <div class='RightChain' style='background-image:url(http://static.tibia.com/images/global/general/chain.gif);'></div>\n
-        \ </div>\n</a>\n</div>\n</div>\n<div id='shops' class='menuitem'>\n<span onClick=\"MenuItemAction('shops')\">\n
-        \ <div class='MenuButton' style='background-image:url(http://static.tibia.com/images/global/menu/button-background.gif);'>\n
-        \   <div onMouseOver='MouseOverMenuItem(this);' onMouseOut='MouseOutMenuItem(this);'><div
-        class='Button' style='background-image:url(http://static.tibia.com/images/global/menu/button-background-over.gif);'></div>\n
-        \     <span id='shops_Lights' class='Lights'>\n        <div class='light_lu'
-        style='background-image:url(http://static.tibia.com/images/global/menu/green-light.gif);'></div>\n
-        \       <div class='light_ld' style='background-image:url(http://static.tibia.com/images/global/menu/green-light.gif);'></div>\n
-        \       <div class='light_ru' style='background-image:url(http://static.tibia.com/images/global/menu/green-light.gif);'></div>\n
-        \     </span>\n      <div id='shops_Icon' class='Icon' style='background-image:url(http://static.tibia.com/images/global/menu/icon-shops.gif);'></div>\n
-        \     <div id='shops_Label' class='Label' style='background-image:url(http://static.tibia.com/images/global/menu/label-shops.gif);'></div>\n
-        \     <div id='shops_Extend' class='Extend' style='background-image:url(http://static.tibia.com/images/global/general/plus.gif);'></div>\n
-        \   </div>\n  </div>\n</span>\n<div id='shops_Submenu' class='Submenu'>\n<a
-        href='http://www.cafepress.com/cipsoft'>\n  <div id='submenu_cafepress' class='Submenuitem'
-        onMouseOver='MouseOverSubmenuItem(this)' onMouseOut='MouseOutSubmenuItem(this)'>\n
-        \   <div class='LeftChain' style='background-image:url(http://static.tibia.com/images/global/general/chain.gif);'></div>\n
-        \   <div id='ActiveSubmenuItemIcon_cafepress' class='ActiveSubmenuItemIcon'
-        style='background-image:url(http://static.tibia.com/images/global/menu/icon-activesubmenu.gif);'></div>\n
-        \   <div id='ActiveSubmenuItemLabel_cafepress' class='SubmenuitemLabel'>Marketplace</div>\n
-        \   <div class='RightChain' style='background-image:url(http://static.tibia.com/images/global/general/chain.gif);'></div>\n
         \ </div>\n</a>\n</div>\n</div>\n<div id='MenuBottom' style='background-image:url(http://static.tibia.com/images/global/general/box-bottom.gif);'></div>\n</div>\n<script
         type='text/javascript'>InitializePage();</script>          </div>\n          <div
         id=\"ContentColumn\">\n            <div id=\"Content\" class=\"Content\">\n
-        \             <div id=\"ContentHelper\">\n\n  <div id=\"worlds\" class=\"Box\">\n
+        \             <div id=\"ContentHelper\">\n\n\n  <div id=\"worlds\" class=\"Box\">\n
         \   <div class=\"Corner-tl\" style=\"background-image:url(http://static.tibia.com/images/global/content/corner-tl.gif);\"></div>\n
         \   <div class=\"Corner-tr\" style=\"background-image:url(http://static.tibia.com/images/global/content/corner-tr.gif);\"></div>\n
         \   <div class=\"Border_1\" style=\"background-image:url(http://static.tibia.com/images/global/content/border-1.gif);\"></div>\n
@@ -544,8 +542,8 @@ http_interactions:
         \   <img id=\"ContentBoxHeadline\" class=\"Title\" src=\"http://static.tibia.com/images/global/strings/headline-worlds.gif\"
         alt=\"Contentbox headline\" />\n    <div class=\"Border_2\">\n      <div class=\"Border_3\">\n
         \       <div class=\"BoxContent\" style=\"background-image:url(http://static.tibia.com/images/global/content/scroll.gif);\">\n<div
-        class=\"TableContainer\" >  <table class=\"Table3\" cellpadding=\"0\" cellspacing=\"0\"
-        >    <div class=\"CaptionContainer\" >      <div class=\"CaptionInnerContainer\"
+        class=\"TableContainer\" >  <table class=\"Table3\" cellpadding=\"0\" cellspacing=\"0\">
+        \   <div class=\"CaptionContainer\" >      <div class=\"CaptionInnerContainer\"
         >        <span class=\"CaptionEdgeLeftTop\" style=\"background-image:url(http://static.tibia.com/images/global/content/box-frame-edge.gif);\"
         /></span>        <span class=\"CaptionEdgeRightTop\" style=\"background-image:url(http://static.tibia.com/images/global/content/box-frame-edge.gif);\"
         /></span>        <span class=\"CaptionBorderTop\" style=\"background-image:url(http://static.tibia.com/images/global/content/table-headline-border.gif);\"
@@ -573,21 +571,21 @@ http_interactions:
         width=\"100%\"  style=\"border:1px solid #faf0d7;\" ><tr class=\"LabelH\"
         ><td>World</td><td>Players Online</td><td>Location</td><td>PvP Type</td><td>Additional
         Information</td></tr><tr class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Aldora\"
-        >Aldora</a></td><td>110</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Aldora</a></td><td>303</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Amera\"
-        >Amera</a></td><td>207</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Amera</a></td><td>384</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Antica\"
-        >Antica</a></td><td>333</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Antica</a></td><td>754</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Arcania\"
-        >Arcania</a></td><td>99</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Arcania</a></td><td>118</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Askara\"
-        >Askara</a></td><td>136</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Askara</a></td><td>209</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Astera\"
-        >Astera</a></td><td>334</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Astera</a></td><td>587</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Aurea\"
-        >Aurea</a></td><td>132</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Aurea</a></td><td>194</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Aurera\"
-        >Aurera</a></td><td>485</td><td>North&#160;America</td><td>Open PvP</td><td>locked,
+        >Aurera</a></td><td>975</td><td>North&#160;America</td><td>Open PvP</td><td>locked,
         preview game world <span style=\"width: 18px; height: 18px;\" ><a href=\"../common/help.php?subtopic=previewserver\"
         target=\"_blank\" ><span class=\"HelperDivIndicator\" onMouseOver=\"ActivateHelperDiv($(this),
         'Preview Game World:', '<p>Preview game worlds are special game worlds that
@@ -599,7 +597,7 @@ http_interactions:
         the Game World</b>.</p><p>Preview phase active: <b>No</b></p>');\" onMouseOut=\"$('#HelperDivContainer').hide();\"
         ><image style=\"border:0px;\" src=\"http://static.tibia.com/images/global/content/info.gif\"
         /></span></a></span></td></tr><tr class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Aurora\"
-        >Aurora</a></td><td>690</td><td>Europe</td><td>Open PvP</td><td>locked, preview
+        >Aurora</a></td><td>1013</td><td>Europe</td><td>Open PvP</td><td>locked, preview
         game world <span style=\"width: 18px; height: 18px;\" ><a href=\"../common/help.php?subtopic=previewserver\"
         target=\"_blank\" ><span class=\"HelperDivIndicator\" onMouseOver=\"ActivateHelperDiv($(this),
         'Preview Game World:', '<p>Preview game worlds are special game worlds that
@@ -611,149 +609,149 @@ http_interactions:
         the Game World</b>.</p><p>Preview phase active: <b>No</b></p>');\" onMouseOut=\"$('#HelperDivContainer').hide();\"
         ><image style=\"border:0px;\" src=\"http://static.tibia.com/images/global/content/info.gif\"
         /></span></a></span></td></tr><tr class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Azura\"
-        >Azura</a></td><td>168</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Azura</a></td><td>198</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Balera\"
-        >Balera</a></td><td>118</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Balera</a></td><td>233</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Berylia\"
-        >Berylia</a></td><td>162</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Berylia</a></td><td>233</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Calmera\"
-        >Calmera</a></td><td>345</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Calmera</a></td><td>543</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Calva\"
-        >Calva</a></td><td>16</td><td>Europe</td><td>Hardcore PvP</td><td>free-to-move</td></tr><tr
-        class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Calvera\"
-        >Calvera</a></td><td>23</td><td>North&#160;America</td><td>Hardcore PvP</td><td>free-to-move</td></tr><tr
-        class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Candia\"
-        >Candia</a></td><td>293</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Calva</a></td><td>73</td><td>Europe</td><td>Hardcore PvP</td><td>less strict
+        character transfer conditions</td></tr><tr class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Calvera\"
+        >Calvera</a></td><td>42</td><td>North&#160;America</td><td>Hardcore PvP</td><td>less
+        strict character transfer conditions</td></tr><tr class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Candia\"
+        >Candia</a></td><td>479</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Celesta\"
-        >Celesta</a></td><td>352</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Celesta</a></td><td>481</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Chimera\"
-        >Chimera</a></td><td>110</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Chimera</a></td><td>225</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Danera\"
-        >Danera</a></td><td>212</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Danera</a></td><td>254</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Danubia\"
-        >Danubia</a></td><td>99</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Danubia</a></td><td>211</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Dolera\"
-        >Dolera</a></td><td>105</td><td>North&#160;America</td><td>Hardcore PvP</td><td></td></tr><tr
+        >Dolera</a></td><td>161</td><td>North&#160;America</td><td>Hardcore PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Elera\"
-        >Elera</a></td><td>159</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Elera</a></td><td>310</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Elysia\"
-        >Elysia</a></td><td>144</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Elysia</a></td><td>224</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Empera\"
-        >Empera</a></td><td>145</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Empera</a></td><td>220</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Eternia\"
-        >Eternia</a></td><td>124</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Eternia</a></td><td>268</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Fidera\"
-        >Fidera</a></td><td>259</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Fidera</a></td><td>479</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Fortera\"
-        >Fortera</a></td><td>262</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Fortera</a></td><td>502</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Furora\"
-        >Furora</a></td><td>81</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Furora</a></td><td>159</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Galana\"
-        >Galana</a></td><td>152</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Galana</a></td><td>170</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Grimera\"
-        >Grimera</a></td><td>157</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Grimera</a></td><td>207</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Guardia\"
-        >Guardia</a></td><td>291</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Guardia</a></td><td>462</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Harmonia\"
-        >Harmonia</a></td><td>398</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Harmonia</a></td><td>564</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Hiberna\"
-        >Hiberna</a></td><td>76</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Hiberna</a></td><td>116</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Honera\"
-        >Honera</a></td><td>286</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Honera</a></td><td>511</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Inferna\"
-        >Inferna</a></td><td>81</td><td>Europe</td><td>Hardcore PvP</td><td></td></tr><tr
+        >Inferna</a></td><td>122</td><td>Europe</td><td>Hardcore PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Iridia\"
-        >Iridia</a></td><td>101</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Iridia</a></td><td>188</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Isara\"
-        >Isara</a></td><td>124</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Isara</a></td><td>139</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Jamera\"
-        >Jamera</a></td><td>142</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Jamera</a></td><td>278</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Julera\"
-        >Julera</a></td><td>169</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Julera</a></td><td>339</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Keltera\"
-        >Keltera</a></td><td>76</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Keltera</a></td><td>202</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Kyra\"
-        >Kyra</a></td><td>86</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Kyra</a></td><td>99</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Libera\"
-        >Libera</a></td><td>130</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Libera</a></td><td>317</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Lucera\"
-        >Lucera</a></td><td>126</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Lucera</a></td><td>165</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Luminera\"
-        >Luminera</a></td><td>313</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Luminera</a></td><td>679</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Lunara\"
-        >Lunara</a></td><td>116</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Lunara</a></td><td>121</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Magera\"
-        >Magera</a></td><td>288</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Magera</a></td><td>501</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Malvera\"
-        >Malvera</a></td><td>104</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Malvera</a></td><td>218</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Menera\"
-        >Menera</a></td><td>301</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Menera</a></td><td>529</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Morgana\"
-        >Morgana</a></td><td>139</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Morgana</a></td><td>201</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Mythera\"
-        >Mythera</a></td><td>124</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Mythera</a></td><td>227</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Nebula\"
-        >Nebula</a></td><td>110</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Nebula</a></td><td>98</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Neptera\"
-        >Neptera</a></td><td>156</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Neptera</a></td><td>308</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Nerana\"
-        >Nerana</a></td><td>319</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Nerana</a></td><td>490</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Nova\"
-        >Nova</a></td><td>160</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Nova</a></td><td>125</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Obsidia\"
-        >Obsidia</a></td><td>102</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Obsidia</a></td><td>232</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Ocera\"
-        >Ocera</a></td><td>37</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Ocera</a></td><td>170</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Olympa\"
-        >Olympa</a></td><td>314</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Olympa</a></td><td>464</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Pacera\"
-        >Pacera</a></td><td>348</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Pacera</a></td><td>544</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Pandoria\"
-        >Pandoria</a></td><td>77</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Pandoria</a></td><td>179</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Premia\"
-        >Premia</a></td><td>94</td><td>Europe</td><td>Open PvP</td><td>premium</td></tr><tr
+        >Premia</a></td><td>130</td><td>Europe</td><td>Open PvP</td><td>premium</td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Pythera\"
-        >Pythera</a></td><td>272</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Pythera</a></td><td>325</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Refugia\"
-        >Refugia</a></td><td>332</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Refugia</a></td><td>555</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Rubera\"
-        >Rubera</a></td><td>124</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Rubera</a></td><td>171</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Samera\"
-        >Samera</a></td><td>205</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Samera</a></td><td>177</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Saphira\"
-        >Saphira</a></td><td>85</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Saphira</a></td><td>134</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Secura\"
-        >Secura</a></td><td>381</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
+        >Secura</a></td><td>529</td><td>Europe</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Selena\"
-        >Selena</a></td><td>133</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Selena</a></td><td>272</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Shanera\"
-        >Shanera</a></td><td>109</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Shanera</a></td><td>165</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Shivera\"
-        >Shivera</a></td><td>187</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Shivera</a></td><td>330</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Silvera\"
-        >Silvera</a></td><td>201</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Silvera</a></td><td>257</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Solera\"
-        >Solera</a></td><td>267</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Solera</a></td><td>432</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Tenebra\"
-        >Tenebra</a></td><td>155</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Tenebra</a></td><td>210</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Thoria\"
-        >Thoria</a></td><td>96</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Thoria</a></td><td>154</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Titania\"
-        >Titania</a></td><td>133</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Titania</a></td><td>234</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Trimera\"
-        >Trimera</a></td><td>61</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Trimera</a></td><td>148</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Unitera\"
-        >Unitera</a></td><td>282</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
+        >Unitera</a></td><td>476</td><td>North&#160;America</td><td>Optional PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Valoria\"
-        >Valoria</a></td><td>133</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Valoria</a></td><td>285</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Vinera\"
-        >Vinera</a></td><td>152</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Vinera</a></td><td>280</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Xantera\"
-        >Xantera</a></td><td>143</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
+        >Xantera</a></td><td>297</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr><tr
         class=\"Even\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Xerena\"
-        >Xerena</a></td><td>118</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
+        >Xerena</a></td><td>87</td><td>Europe</td><td>Open PvP</td><td></td></tr><tr
         class=\"Odd\" ><td><a href=\"http://www.tibia.com/community/?subtopic=worlds&world=Zanera\"
-        >Zanera</a></td><td>147</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr>
+        >Zanera</a></td><td>220</td><td>North&#160;America</td><td>Open PvP</td><td></td></tr>
         \   </table>  </div></div><div class=\"TableShadowContainer\" >  <div class=\"TableBottomShadow\"
         style=\"background-image:url(http://static.tibia.com/images/global/content/table-shadow-bm.gif);\"
         >    <div class=\"TableBottomLeftShadow\" style=\"background-image:url(http://static.tibia.com/images/global/content/table-shadow-bl.gif);\"
@@ -765,12 +763,12 @@ http_interactions:
         \ </div>\n              <div id=\"ThemeboxesColumn\" >\n                <div
         id=\"DeactivationContainerThemebox\" onClick=\"DisableDeactivationContainer();\"
         ></div>\n                <div id=\"RightArtwork\">\n                  <img
-        id=\"Monster\" src=\"http://static.tibia.com/images/global/header/monsters/orcleader.gif\"
-        onClick=\"window.location = 'http://www.tibia.com/library/?subtopic=creatures&amp;race=orcleader';\"
+        id=\"Monster\" src=\"http://static.tibia.com/images/global/header/monsters/marid.gif\"
+        onClick=\"window.location = 'http://www.tibia.com/library/?subtopic=creatures&amp;race=marid';\"
         alt=\"Monster of the Week\" />\n                  <img id=\"PedestalAndOnline\"
         src=\"http://static.tibia.com/images/global/header/pedestal-and-online.gif\"
         alt=\"Monster Pedestal and Players Online Box\"/>\n                  <div
-        id=\"PlayersOnline\" onClick=\"window.location = 'http://www.tibia.com/community/?subtopic=worlds';\">14916<br
+        id=\"PlayersOnline\" onClick=\"window.location = 'http://www.tibia.com/community/?subtopic=worlds';\">24665<br
         />Players Online</div>\n                </div>\n                <div id=\"Themeboxes\">\n
         \                 <!-- premium theme box -->\n<div id=\"PremiumBox\" class=\"Themebox\"
         style=\"background-image:url(http://static.tibia.com/images/global/themeboxes/premium/premiumbox.gif);\">\n
@@ -790,33 +788,36 @@ http_interactions:
         >\n      <div class=\"fb-send\" data-href=\"https://www.facebook.com/tibia\"
         data-width=\"50\" data-height=\"20\" ></div>\n    </div>\n    <div id=\"FacebookLikes\"
         >\n      <div class=\"fb-like\" data-href=\"https://www.facebook.com/tibia\"
-        data-send=\"false\" data-width=\"225\" data-show-faces=\"false\"></div>\n
-        \   </div>\n  </div>\n  <div id=\"TwitterBlock\" >\n    <a href=\"https://twitter.com/Tibia\"
+        data-width=\"50\" data-layout=\"standard\" data-action=\"recommend\" data-show-faces=\"false\"
+        ></div>\n    </div>\n  </div>\n  <div id=\"TwitterBlock\" >\n    <a href=\"https://twitter.com/Tibia\"
         class=\"twitter-follow-button\" data-show-count=\"false\">Follow @Tibia</a>\n
-        \   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>\n
-        \ </div>\n  <div class=\"Bottom\" style=\"background-image:url(http://static.tibia.com/images/global/general/box-bottom.gif);\"></div>\n</div>\n\n
+        \   <script>\n      (function(d, s, id) {\n        var js, fjs = d.getElementsByTagName(s)[0];\n
+        \       if (d.getElementById(id)) return;\n        js = d.createElement(s);
+        js.id = id;\n        js.src = \"//connect.facebook.net/en_US/all.js#xfbml=1&appId=497232093667125\";\n
+        \       fjs.parentNode.insertBefore(js, fjs);\n      }(document, 'script',
+        'facebook-jssdk'));\n    </script>\n  </div>\n  <div class=\"Bottom\" style=\"background-image:url(http://static.tibia.com/images/global/general/box-bottom.gif);\"></div>\n</div>\n\n
         \   <!-- random fansite theme box -->\n    <div id=\"FansiteBox\" class=\"Themebox\"
         style=\"background-image:url(http://static.tibia.com/images/global/themeboxes/fansites/fansites_themebox.gif);\">\n
         \     <div id=\"FansiteLogoFrame\" style=\"background-image:url(http://static.tibia.com/images/global/themeboxes/fansites/border_supported.gif);\">\n
-        \       <a href=\"http://www.tibiaevents.com\" target=\"_blank\" ><img id=\"FansiteLogo\"
-        src=\"http://static.tibia.com/images/community/fansitelogos/TibiaEvents.com.gif\"
-        /></a>\n      </div>\n      <div class=\"ThemeboxButton\" >\n        <div
-        class=\"BigButton\" style=\"background-image:url(http://static.tibia.com/images/global/buttons/sbutton.gif)\"
+        \       <a href=\"http://www.funtibia.com\" target=\"_blank\" ><img id=\"FansiteLogo\"
+        src=\"http://static.tibia.com/images/community/fansitelogos/FunTibia.com.gif\"
+        /></a>\n      </div>\n      <div class=\"ThemeboxButton\" >\n        <form
+        action=\"http://www.tibia.com/community/?subtopic=fansites\" method=\"post\"
+        style=\"padding:0px;margin:0px;\" ><div class=\"BigButton\" style=\"background-image:url(http://static.tibia.com/images/global/buttons/sbutton.gif)\"
         ><div onMouseOver=\"MouseOverBigButton(this);\" onMouseOut=\"MouseOutBigButton(this);\"
         ><div class=\"BigButtonOver\" style=\"background-image:url(http://static.tibia.com/images/global/buttons/sbutton_over.gif);\"
-        ></div><a class=\"ButtonText\" href=\"http://www.tibia.com/community/?subtopic=fansites\"
-        ><img border=\"0\" src=\"http://static.tibia.com/images/global/buttons/_sbutton_viewallfansites.gif\"
-        alt=\"View all Fansites\" /></a></div></div>      </div>\n      <div class=\"Bottom\"
-        style=\"background-image:url(http://static.tibia.com/images/global/general/box-bottom.gif);\"></div>\n
+        ></div><input class=\"ButtonText\" type=\"image\" name=\"View all Fansites\"
+        alt=\"View all Fansites\" src=\"http://static.tibia.com/images/global/buttons/_sbutton_viewallfansites.gif\"
+        ></div></div></form>      </div>\n      <div class=\"Bottom\" style=\"background-image:url(http://static.tibia.com/images/global/general/box-bottom.gif);\"></div>\n
         \   </div>\n                </div>\n              </div>\n            </div>\n
-        \           </div>\n            <div id=\"Footer\">\n              Copyright
-        by CipSoft GmbH. All rights reserved.<br/>\n              <a href=\"http://www.tibia.com/abouttibia/?subtopic=aboutcipsoft\">About
+        \           <div id=\"Footer\">\n              Copyright by CipSoft GmbH.
+        All rights reserved.<br/>\n              <a href=\"http://www.tibia.com/abouttibia/?subtopic=aboutcipsoft\">About
         CipSoft</a> | <a href=\"http://www.tibia.com/support/?subtopic=legaldocuments&amp;page=agreement\">Service
         Agreement</a> | <a href=\"http://www.tibia.com/support/?subtopic=legaldocuments&amp;page=privacy\">Privacy
-        Policy</a>\n            </div>\n          </div>\n        </div>\n       </div>\n
-        \     </div>\n    </div>\n  </div>\n  <script type=\"text/javascript\" >\n
-        \   // disable all control elements which are not part of the content container
-        element\n    if (g_Deactivated == true) {\n      document.getElementById('LoginButtonContainer').style.zIndex
+        Policy</a>\n            </div>\n          </div>\n        </div>\n      </div>\n
+        \   </div>\n  </div>\n  <script type=\"text/javascript\" >\n    // disable
+        all control elements which are not part of the content container element\n
+        \   if (g_Deactivated == true) {\n      document.getElementById('LoginButtonContainer').style.zIndex
         = \"1\";\n      document.getElementById('DeactivationContainer').style.display
         = \"block\";\n      document.getElementById('DeactivationContainer').style.zIndex
         = \"50\";\n      document.getElementById('DeactivationContainerThemebox').style.display
@@ -827,8 +828,8 @@ http_interactions:
         \     document.getElementById('ThemeboxesColumn').filters.alpha.opacity =
         \"0.75\";\n      document.getElementById('ThemeboxesColumn').style.filter
         = \"alpha(opacity=50); opacity: 0.30\";\n      document.getElementById('Monster').setAttribute(\"onclick\",
-        \"\")\n      document.getElementById('PlayersOnline').setAttribute(\"onclick\",
-        \"\")\n    }\n  </script>\n  <div id=\"HelperDivContainer\" style=\"background-image:
+        \"\");\n      document.getElementById('PlayersOnline').setAttribute(\"onclick\",
+        \"\");\n    }\n  </script>\n  <div id=\"HelperDivContainer\" style=\"background-image:
         url(http://static.tibia.com/images/global/content/scroll.gif);\" ><div class=\"HelperDivArrow\"
         style=\"background-image: url(http://static.tibia.com/images/global/content/helper-div-arrow.png);\"
         ></div><div id=\"HelperDivHeadline\" ></div><div id=\"HelperDivText\" ></div><center><img
@@ -838,5 +839,5 @@ http_interactions:
         src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n</script>\n<script
         type=\"text/javascript\">\nvar pageTracker = _gat._getTracker(\"UA-1287546-1\");\npageTracker._setDomainName(\"tibia.com\");\npageTracker._initData();\npageTracker._trackPageview(\"/community/worlds\");\n</script>\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Sat, 10 Aug 2013 17:18:49 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Sat, 08 Mar 2014 19:11:15 GMT
+recorded_with: VCR 2.8.0
