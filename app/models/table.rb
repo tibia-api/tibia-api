@@ -49,8 +49,6 @@ module TibiaAPI
         raise InconsistentNumberOfArugments if values.length != attributes.length
 
         Hash[attributes.zip values]
-      rescue
-        nil
       end
 
       def parse_row(world_row)
