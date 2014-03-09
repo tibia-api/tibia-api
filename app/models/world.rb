@@ -1,43 +1,13 @@
-require 'net/http'
-require 'active_model'
+require 'models/table'
 
 module TibiaAPI
   class World
-    include ActiveModel::Model
-    include ActiveModel::Serializers::JSON
-    attr_accessor :name, :online, :location, :type, :additional
+    include Table
 
-    def attributes
-      {
-        name: name,
-        online: online,
-        location: location,
-        type: type,
-        additional: additional
-      }
-    end
+    attributes :name, :online, :location, :type, :additional
 
-    class << self
-      def all
-        response = Net::HTTP.get URI('http://www.tibia.com/community/?subtopic=worlds')
-        dom = Nokogiri::HTML.parse(response)
-        dom.css('#worlds table.TableContent tr').map(&method(:parse_one)).compact
-      end
-
-      private
-
-      def parse_one(world_row)
-        name, online, location, type, additional = world_row.css('td').map(&:text).map(&:strip)
-        return if name =~ /(^Overall Maximum|^World$)/
-
-        World.new(
-          name: name,
-          online: online.to_i,
-          location: location,
-          type: type,
-          additional: additional
-        )
-      end
-    end
+    self.endpoint_url = 'http://www.tibia.com/community/?subtopic=worlds'
+    self.list_selector = '#worlds table.TableContent tr'
+    self.item_filter = ->(row) { row[0] =~ /(^Overall Maximum|^World$)/ }
   end
 end
