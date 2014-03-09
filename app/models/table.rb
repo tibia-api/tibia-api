@@ -17,6 +17,11 @@ module TibiaAPI
       include ActiveModel::Serializers::JSON
     end
 
+    def attributes
+      values = self.class.attributes.map &method(:send)
+      self.class.parse_attributes *values
+    end
+
     module ClassMethods
       def all
         (0...pages).flat_map &method(:parse_page)
@@ -26,16 +31,7 @@ module TibiaAPI
         return @attributes if attrs.empty?
         @attributes = attrs
 
-        define_accessors
-      end
-
-      def define_accessors
         attr_accessor *attributes
-
-        define_method :attributes do
-          values = self.class.attributes.map &method(:send)
-          self.class.parse_attributes *values
-        end
       end
 
       def parse_attributes(*values)
