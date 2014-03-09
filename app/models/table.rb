@@ -11,6 +11,7 @@ module TibiaAPI
 
     included do
       class_attribute :endpoint_url, :list_selector, :item_filter, :pages
+      self.pages = 1
 
       include ActiveModel::Model
       include ActiveModel::Serializers::JSON
@@ -18,26 +19,18 @@ module TibiaAPI
 
     module ClassMethods
       def all
-        response = Net::HTTP.get URI(endpoint_url)
-        dom = Nokogiri::HTML.parse(response)
-        results = dom.css(list_selector).map(&method(:parse_row)).compact
-
-        if pages
-          (1..pages).each do |page|
-            response = Net::HTTP.get URI(endpoint_url + "&page=#{page}")
-            dom = Nokogiri::HTML.parse(response)
-            results.concat dom.css(list_selector).map(&method(:parse_row)).compact
-          end
-        end
-
-        results
+        (0...pages).flat_map &method(:parse_page)
       end
 
       def attributes(*attrs)
         return @attributes if attrs.empty?
         @attributes = attrs
 
-        attr_accessor *attrs
+        define_accessors
+      end
+
+      def define_accessors
+        attr_accessor *attributes
 
         define_method :attributes do
           values = self.class.attributes.map &method(:send)
@@ -51,9 +44,15 @@ module TibiaAPI
         Hash[attributes.zip values]
       end
 
+      def parse_page(page)
+        response = Net::HTTP.get URI(endpoint_url + "&page=#{page}")
+        dom = Nokogiri::HTML.parse(response)
+        dom.css(list_selector).map(&method(:parse_row)).compact
+      end
+
       def parse_row(world_row)
         row = world_row.css('td').map { |col| col.text.strip }
-        return if item_filter.call(row) || row[0].nil?
+        return if row[0].nil? || item_filter.call(row)
 
         new(parse_attributes *row)
       end
