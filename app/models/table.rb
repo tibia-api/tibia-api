@@ -10,7 +10,7 @@ module TibiaAPI
     class InconsistentNumberOfArugments < StandardError; end
 
     included do
-      class_attribute :endpoint_url, :list_selector, :item_filter
+      class_attribute :endpoint_url, :list_selector, :item_filter, :pages
 
       include ActiveModel::Model
       include ActiveModel::Serializers::JSON
@@ -20,7 +20,17 @@ module TibiaAPI
       def all
         response = Net::HTTP.get URI(endpoint_url)
         dom = Nokogiri::HTML.parse(response)
-        dom.css(list_selector).map(&method(:parse_row)).compact
+        results = dom.css(list_selector).map(&method(:parse_row)).compact
+
+        if pages
+          (1..pages).each do |page|
+            response = Net::HTTP.get URI(endpoint_url + "&page=#{page}")
+            dom = Nokogiri::HTML.parse(response)
+            results.concat dom.css(list_selector).map(&method(:parse_row)).compact
+          end
+        end
+
+        results
       end
 
       def attributes(*attrs)
@@ -39,11 +49,13 @@ module TibiaAPI
         raise InconsistentNumberOfArugments if values.length != attributes.length
 
         Hash[attributes.zip values]
+      rescue
+        nil
       end
 
       def parse_row(world_row)
         row = world_row.css('td').map { |col| col.text.strip }
-        return if item_filter.call(row)
+        return if item_filter.call(row) || row[0].nil?
 
         new(parse_attributes *row)
       end

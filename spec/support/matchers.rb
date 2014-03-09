@@ -4,6 +4,7 @@ RSpec::Matchers.define :include_hashes do |expected_hashes|
       def transform(array)
         array.flatten.map(&:to_s).uniq.
           reject { |value| value == '<number>' }.
+          reject { |value| value == '<string>' }.
           sort.compact
       end
 
